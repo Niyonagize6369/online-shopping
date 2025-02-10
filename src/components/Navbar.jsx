@@ -50,7 +50,7 @@ const dropdownLinks = [
 ];
 function Navbar() {
   return (
-    <div className="relative z-40 duration-200 shadow-md bg-whitedack:bg-gray-900 dark:text-green-600">
+    <div className="relative z-40 duration-200 shadow-md bg-whitedack:bg-gray-900 dark:text-white">
       {/* upper nav */}
       <div className="py-2 bg-primary/40">
         <div className="container flex items-center justify-between">
@@ -99,7 +99,7 @@ function Navbar() {
       </div>
 
       {/* lower vav */}
-      <div className="flex justify-center">
+      <div className="flex justify-center dark:bg-gray-900">
         <ul className="items-center hidden gap-4 sm:flex">
           {Menu.map((data) => (
             <li key={data.id}>
