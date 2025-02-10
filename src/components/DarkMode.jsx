@@ -13,7 +13,7 @@ const DarkMode = () => {
       element.classList.add("dark");
       localStorage.setItem("theme", "dark");
     } else {
-      element.classList.remove("dark");
+      element.classList.remove("Dark");
       localStorage.setItem("theme", "light");
     }
   }, [theme]);

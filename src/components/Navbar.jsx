@@ -50,7 +50,7 @@ const dropdownLinks = [
 ];
 function Navbar() {
   return (
-    <div className="relative z-40 duration-200 shadow-md bg-whitedack:bg-gray-900 dark:text-green-600">
+    <div className="relative z-40 duration-200 shadow-md bg-whitedack:bg-gray-900 dark:text-black">
       {/* upper nav */}
       <div className="py-2 bg-primary/40">
         <div className="container flex items-center justify-between">
@@ -82,7 +82,7 @@ function Navbar() {
             {/* order button */}
             <button
               onClick={() => alert("Ordering not available yet")}
-              className="flex gap-3 px-4 py-1 text-white transition-all duration-200 rounded-full bg-gradient-to-r from-primary to-secondary item center group "
+              className="flex gap-3 px-4 py-1 text-white transition-all duration-200 rounded-full bg-gradient-to-r from-primary to- secondary item center group "
             >
               <span className="hidden transition-all duration-200 group-hover:block">
                 Order
@@ -112,18 +112,27 @@ function Navbar() {
             </li>
           ))}
           {/* {simple dropdown and links} */}
-          <li className="relative group">
+          <li className="relative cursor-pointer group">
             <a href="#" className="flex items-center gap-[2px] py-2">
-              Trending
+              Trending Product
               <span>
                 <FaCaretDown className="transition-all duration-200 group-hover:rotate-180" />
               </span>
             </a>
-            <div>
+            <div
+              className="absolute z-[9999] hidden
+               group-hover:block w-[150px]
+            rounded-md  bg-white p-2 text-black shadow-md"
+            >
               <ul>
                 {dropdownLinks.map((data) => (
                   <li key={data.id}>
-                    <a href={data.link}>{data.name}</a>
+                    <a
+                      href={data.link}
+                      className="inline-block w-full p-2 rounded-md hover:bg-primary/20"
+                    >
+                      {data.name}
+                    </a>
                   </li>
                 ))}
               </ul>
