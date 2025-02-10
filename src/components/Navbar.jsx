@@ -57,7 +57,7 @@ function Navbar() {
           <div>
             <a
               href="#"
-              className="gap-2 text-2xl font-bold sm:text-3xlflex gap-2flex"
+              className="flex gap-2 text-2xl font-bold sm:text-3xlflex"
             >
               <img src={Logo1} alt="Logo1" className="w-10" />
               shopping
@@ -74,7 +74,8 @@ function Navbar() {
                 className="w-[200px] sm:w-[200px] group-hover:w-[300px]
                 transition-all duration-300 rounded-full border
                 border-gray-300 px-2 py-1 focus:outline-none
-                focus border-1 focus:boeder-primary"
+                focus border-1 focus:border-primary dark:border-gray-500
+                dark:bg-gray-800"
               />
               <IoMdSearch className="absolute text-gray-500 -translate-y-1/2 group-hover:text-primary top-1/2 right-3" />
             </div>
