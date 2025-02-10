@@ -1,9 +1,8 @@
-import React from "react";
 import Logo1 from "../assets/logo1.jpg";
 import { IoMdSearch } from "react-icons/io";
-import { LuSearchCheck } from "react-icons/lu";
+// import { LuSearchCheck } from "react-icons/lu";
 import { FaCaretDown, FaCartShopping } from "react-icons/fa6";
-import DarkMode from "./Darkmode.jsx";
+import DarkMode from "./DarkMode";
 const Menu = [
   {
     id: 1,
@@ -21,12 +20,12 @@ const Menu = [
     link: "/#",
   },
   {
-    id: 3,
+    id: 4,
     name: "Mens Wear",
     link: "/#",
   },
   {
-    id: 3,
+    id: 5,
     name: "Electronics",
     link: "/#",
   },
