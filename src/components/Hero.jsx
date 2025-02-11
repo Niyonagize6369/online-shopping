@@ -8,7 +8,7 @@ const Imagelist = [
   {
     id: 1,
     img: Image1,
-    title: "Upto 50% off on sales",
+    title: "Upto30% off on sales",
     description:
       "lorem his life will firever be change dolor sit amet, consectetur",
   },
@@ -22,7 +22,7 @@ const Imagelist = [
   {
     id: 3,
     img: Image3,
-    title: "Upto 50% off on all Women's Wear",
+    title: "Upto 70% off on all Women's Wear",
     description:
       "lorem his life will firever be change dolor sit amet, consectetur",
   },
@@ -62,11 +62,27 @@ function Hero() {
               <div className="grid grid-cols-1 sm:grid-cols-2">
                 {/* text content section */}
                 <div className="relative z-10 flex flex-col justify-center order-2 gap-4 pt-12 text-center sm:pt-0 sm:text-left sm:order-1">
-                  <h1 className="text-5xl font-bold sm:text-6xl lg:text-7xl">
+                  <h1
+                    data-aos="zoom-out"
+                    data-aos-duration="500"
+                    data-aos-once="true"
+                    className="text-5xl font-bold sm:text-6xl lg:text-7xl"
+                  >
                     {data.title}
                   </h1>
-                  <p className="text-sm">{data.description}</p>
-                  <div>
+                  <p
+                    data-aos="fade-up"
+                    data-aos-duration="500"
+                    data-aos-delay="100"
+                    className="text-sm"
+                  >
+                    {data.description}
+                  </p>
+                  <div
+                    data-aos="fade-up"
+                    data-aos-duration="500"
+                    data-aos-delay="300"
+                  >
                     <button className="px-4 py-2 rounded-full dark:text-white darduration-200 bg-gradient-to-r from-primary to-secondary hover:scale-105">
                       Order Now
                     </button>
@@ -74,7 +90,11 @@ function Hero() {
                 </div>
                 {/* Image section  */}
                 <div className="order-1 sm:order-2">
-                  <div className="relative z-10">
+                  <div
+                    data-aos="zoom-in"
+                    data-aos-once="true"
+                    className="relative z-10"
+                  >
                     <img
                       src={data.img}
                       alt=""

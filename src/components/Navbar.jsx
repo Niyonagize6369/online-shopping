@@ -50,7 +50,7 @@ const dropdownLinks = [
 ];
 function Navbar() {
   return (
-    <div className="relative z-40 duration-200 shadow-md bg-whitedack:bg-gray-900 dark:text-white">
+    <div className="relative z-40 duration-200 bg-white shadow-md dark:bg-gray-900 dark:text-white">
       {/* upper nav */}
       <div className="py-2 bg-primary/40">
         <div className="container flex items-center justify-between">
