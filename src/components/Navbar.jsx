@@ -83,7 +83,7 @@ function Navbar() {
             {/* order button */}
             <button
               onClick={() => alert("Ordering not available yet")}
-              className="flex gap-3 px-4 py-1 text-white transition-all duration-200 rounded-full bg-gradient-to-r from-primary to- secondary item center group "
+              className="flex gap-3 px-4 py-1 text-white transition-all duration-200 rounded-full bg-gradient-to-r from-primary to-secondary item-center group "
             >
               <span className="hidden transition-all duration-200 group-hover:block">
                 Order
