@@ -62,7 +62,7 @@ function Products() {
           <h1 data-aos="fade-up" className="text-3xl font-bold">
             Product
           </h1>
-          <p data-aos="fade-up" className="text-xs text-gray-400">
+          <p data-aos="fade-up" className="text-xs text-gray-900">
             lorem ipsum dplor sit amet consectetur adipicicing elit sit
             asperiores
           </p>
