@@ -54,6 +54,7 @@ function TopProducts() {
           <div className="grid grid-cols-1 gap-20 sm:grid-cols-2 md:grid-cols-3 md:gap-5 place-items-center">
             {ProductsData.map((data) => (
               <div
+              data-aos="zoom-in"
                 className="relative bg-white shadow-xl rounded-2xl dark:bg-gray-800
                hover:bg-black/80 dark:hover:bg-primary
                 hover:text-white duration-300
