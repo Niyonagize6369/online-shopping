@@ -24,7 +24,10 @@ function Banner() {
             />
           </div>
           {/* text detail section  */}
-          <div className="flex flex-col justify-center gap-6 sm:pt-0">
+          <div
+            data-aos="fade-up"
+            className="flex flex-col justify-center gap-6 sm:pt-0"
+          >
             <h1 className="text-3xl font-bold sm:text-4xl">
               Winter sales upto 50% off
             </h1>
@@ -32,13 +35,22 @@ function Banner() {
               lorem ipsum dplor sit amet consectetur adipicicing elit sit
               asperiores
             </p>
-            <div>
+            <div className="flex-col gap-4">
               <div data-aos="fade-up" className="flex items-center gap-4">
                 <GrSecure className="w-12 h-12 p-4 text-4xl rounded-full shadow-sm bg-violet-100 dark:bg-violet-400" />
                 <p>Quality Product </p>
               </div>
               <div data-aos="fade-up" className="flex items-center gap-4">
                 <IoFastFood className="w-12 h-12 p-4 text-4xl bg-orange-100 rounded-full shadow-sm dark:bg-orange-400" />
+                <p>Fast Delivery</p>
+              </div>
+              <div data-aos="fade-up" className="flex items-center gap-4">
+                <IoFastFood className="w-12 h-12 p-4 text-4xl bg-orange-100 rounded-full shadow-sm dark:bg-orange-400" />
+                <p>Easy Payment Method</p>
+              </div>
+              <div data-aos="fade-up" className="flex items-center gap-4">
+                <IoFastFood className="w-12 h-12 p-4 text-4xl bg-orange-100 rounded-full shadow-sm dark:bg-orange-400" />
+                <p>Get Offers</p>
               </div>
             </div>
           </div>
