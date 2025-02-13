@@ -7,12 +7,12 @@ import { GiFoodTruck } from "react-icons/gi";
 function Banner() {
   return (
     <div
-      classname="min-h-[550px] flex justify-center 
-    items center py-12
+      className="min-h-[550px] flex justify-center 
+    items-center py-12
     sm:py-0"
     >
-      <div classname="container">
-        <div classname="grid items-center grid-cols-1 gap-6 sm:grid-cols-2">
+      <div className="container">
+        <div className="grid items-center grid-cols-1 gap-6 sm:grid-cols-2">
           {/* image section  */}
           <div data-aos="zoom-in">
             <img
