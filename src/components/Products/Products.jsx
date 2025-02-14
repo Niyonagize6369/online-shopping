@@ -56,7 +56,7 @@ function Products() {
         {/* header section  */}
 
         <div className="mb-10 text-center max-w-[600px] mx-auto">
-          <p data-aos="fade-up" className="text-sm text-primary">
+          <p data-aos="fade-up" className="text-2xl text-primary">
             Top selling Products for you
           </p>
           <h1 data-aos="fade-up" className="text-3xl font-bold">

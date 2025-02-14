@@ -2,7 +2,7 @@ import React from "react";
 
 const Testimonials = () => {
   return (
-    <div className="py-10">
+    <div className="py-10 mb-10">
       <div className="container">
         {/* header section  */}
 
@@ -17,7 +17,8 @@ const Testimonials = () => {
             lorem ipsum dplor sit amet consectetur adipicicing elit sit
             asperiores
           </p>
-        </div>
+              </div>
+              
       </div>
     </div>
   );

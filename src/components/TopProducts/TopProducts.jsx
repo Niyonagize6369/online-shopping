@@ -39,7 +39,7 @@ function TopProducts() {
         <div className="container">
           {/* header section */}
           <div className="mb-24 text-center">
-            <p data-aos="fade-up" className="text-sm text-primary">
+            <p data-aos="fade-up" className="text-2xl text-primary">
               Top Rated Products for you
             </p>
             <h1 data-aos="fade-up" className="text-3xl font-bold">
