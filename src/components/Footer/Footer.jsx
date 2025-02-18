@@ -28,7 +28,7 @@ const FooterLinks = [
 const Footer = () => {
   return (
     <footer>
-      <div style={BannerImg} className="mb-20 text-white">
+      <div style={BannerImg} className="mb-0 text-white">
         <div className="container">
           <div data-aos="zoom-in" className="grid pt-5 md:grid-cols-3 pb-44">
             {/* Company details */}
