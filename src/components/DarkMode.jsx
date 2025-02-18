@@ -4,18 +4,16 @@ import DarkButton from "../assets/website/Dark-mode-button.jpg";
 
 const DarkMode = () => {
   const [theme, setTheme] = useState(() => {
-    return localStorage.getItem("theme") || "light";
+    if (typeof window !== "undefined") {
+      return localStorage.getItem("theme") || "light";
+    }
+    return "light";
   });
 
   useEffect(() => {
     const element = document.documentElement;
-    if (theme === "dark") {
-      element.classList.add("dark");
-      localStorage.setItem("theme", "dark");
-    } else {
-      element.classList.remove("dark");
-      localStorage.setItem("theme", "light");
-    }
+    element.classList.toggle("dark", theme === "dark");
+    localStorage.setItem("theme", theme);
   }, [theme]);
 
   return (
@@ -24,7 +22,7 @@ const DarkMode = () => {
         src={LightButton}
         alt="Switch to Dark Mode"
         onClick={() => setTheme("dark")}
-        className={`absolute w-12 cursor-pointer transition-all duration-300 ${
+        className={`absolute w-12 cursor-pointer transition-opacity duration-300 ${
           theme === "dark" ? "opacity-0 pointer-events-none" : "opacity-100"
         }`}
       />
@@ -32,7 +30,7 @@ const DarkMode = () => {
         src={DarkButton}
         alt="Switch to Light Mode"
         onClick={() => setTheme("light")}
-        className={`absolute w-12 cursor-pointer transition-all duration-300 ${
+        className={`absolute w-12 cursor-pointer transition-opacity duration-300 ${
           theme === "light" ? "opacity-0 pointer-events-none" : "opacity-100"
         }`}
       />

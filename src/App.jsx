@@ -22,7 +22,7 @@ function App() {
     AOS.refresh();
   }, []);
   return (
-    <div>
+    <div className="duration-200 bg-white dark:bg-gray-900 dark:text-white">
       <Navbar />
       <Hero />
       <Products />
@@ -30,7 +30,7 @@ function App() {
       <Banner />
       <Subscribe />
       <Testimonials />
-      <Footer/>
+      <Footer />
     </div>
   );
 }
