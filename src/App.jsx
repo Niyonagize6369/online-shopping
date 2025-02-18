@@ -22,7 +22,7 @@ function App() {
     AOS.refresh();
   }, []);
   return (
-    <div className="duration-200 bg-white dark:bg-gray-900 dark:text-white">
+    <div className="duration-200 bg-white dark:bg-gray-700 dark:text-white">
       <Navbar />
       <Hero />
       <Products />

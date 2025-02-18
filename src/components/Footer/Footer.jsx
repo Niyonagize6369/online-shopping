@@ -1,7 +1,13 @@
 import React from "react";
 import FooterLogo from "../../assets/logo2.jpg";
 import Banner from "../../assets/website/footer-pattern.jpg";
-import { FaFacebook, FaInstagram, FaLinkedin } from "react-icons/fa6";
+import {
+  FaFacebook,
+  FaInstagram,
+  FaLinkedin,
+  FaLocationArrow,
+} from "react-icons/fa6";
+import { FaMobileAlt } from "react-icons/fa";
 
 const BannerImg = {
   backgroundImage: `url(${Banner})`, // Fixed template literal
@@ -22,9 +28,9 @@ const FooterLinks = [
 const Footer = () => {
   return (
     <footer>
-      <div style={BannerImg} className="mb-0 text-white">
+      <div style={BannerImg} className="mb-20 text-white">
         <div className="container">
-          <div className="grid pt-5 md:grid-cols-3 pv-44">
+          <div data-aos="zoom-in" className="grid pt-5 md:grid-cols-3 pb-44">
             {/* Company details */}
             <div className="px-4 py-8">
               <h1 className="flex items-center gap-3 mb-3 text-xl font-bold text-justify sm:text-3xl sm:text-left">
@@ -42,7 +48,7 @@ const Footer = () => {
               <div>
                 <div className="px-4 py-8">
                   <h1 className="mb-3 text-xl font-bold text-justify sm:text-xl sm:text-left">
-                    Important Links
+                    Links
                   </h1>
                   <ul className="flex flex-col gap-3">
                     {FooterLinks.map((link) => (
@@ -69,6 +75,16 @@ const Footer = () => {
                   <a href="https://linkedin.com">
                     <FaLinkedin className="text-3xl" />
                   </a>
+                  <div className="mt-6">
+                    <div className="flex items-center gap-3 mt-3">
+                      <FaLocationArrow />
+                      <p>nodia, uttar prodeesh</p>
+                    </div>
+                    <div className="flex items-center gap-3 mt-3">
+                      <FaMobileAlt />
+                      <p>+250 783350275</p>
+                    </div>
+                  </div>
                 </div>
               </div>
             </div>
