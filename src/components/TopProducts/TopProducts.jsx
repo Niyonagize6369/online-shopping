@@ -11,91 +11,90 @@ const ProductsData = [
     title: "Men's Ethnic",
     rating: 5.0,
     author: "white",
+    description: "A stylish ethnic wear for men.",
     aosdelay: "0",
   },
-
   {
     id: 2,
     img: Img2,
-    title: "Men's western",
+    title: "Men's Western",
     rating: 4.5,
     author: "Red",
+    description: "Casual western wear for everyday style.",
     aosdelay: "200",
   },
   {
     id: 3,
     img: Img3,
-    title: "goggles",
+    title: "Goggles",
     rating: 4.7,
-    author: "brown",
+    author: "Brown",
+    description: "Trendy goggles for all occasions.",
     aosdelay: "400",
   },
 ];
 
 function TopProducts() {
   return (
-    <div>
-      <div>
-        <div className="container">
-          {/* header section */}
-          <div className="mb-24 text-center">
-            <p data-aos="fade-up" className="text-2xl text-primary">
-              Top Rated Products for you
-            </p>
-            <h1 data-aos="fade-up" className="text-3xl font-bold">
-              Best Product
-            </h1>
-            <p data-aos="fade-up" className="text-xl gray-900 text-">
-              lorem ipsum dplor sit amet consectetur adipicicing elit sit
-              asperiores
-            </p>
-          </div>
-          {/* body section  */}
-          <div className="grid grid-cols-1 gap-20 sm:grid-cols-2 md:grid-cols-3 md:gap-5 place-items-center">
-            {ProductsData.map((data) => (
-              <div
-                data-aos="zoom-in"
-                className="relative bg-white shadow-xl rounded-2xl dark:bg-gray-800
+    <div className="container">
+      {/* Header Section */}
+      <div className="mb-24 text-center">
+        <p data-aos="fade-up" className="text-2xl text-primary">
+          Top Rated Products for You
+        </p>
+        <h1 data-aos="fade-up" className="text-3xl font-bold">
+          Best Products
+        </h1>
+        <p data-aos="fade-up" className="text-xl text-gray-900">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit.
+        </p>
+      </div>
+
+      {/* Body Section */}
+      <div className="grid grid-cols-1 gap-10 sm:grid-cols-2 md:grid-cols-3 place-items-center">
+        {ProductsData.map((data) => (
+          <div
+            key={data.id}
+            data-aos="zoom-in"
+            className="relative bg-white shadow-xl rounded-2xl dark:bg-gray-800
                hover:bg-black/80 dark:hover:bg-primary
                 hover:text-white duration-300
-                group max-w-[300px]"
-              >
-                {/* image section  */}
-                <div className="h-[100px]">
-                  <img
-                    src={data.img}
-                    alt=""
-                    className="max-w-[140px] block mx-auto transform
-                -translate-y-20 group-hover:scale-105 duration-300
+                group max-w-[300px] p-4"
+          >
+            {/* Image Section */}
+            <div className="flex justify-center h-auto">
+              <img
+                src={data.img}
+                alt={data.title}
+                className="max-w-[140px] block mx-auto transform
+                -translate-y-10 group-hover:scale-105 duration-300
                 drop-shadow-md"
-                  />
-                  {/* <FaStar className="text-yellow-400 " /> */}
-                </div>
-                {/* detail section  */}
-                <div className="p-4 text-center">
-                  {/* star rating  */}
-                  <div className="flex items-center justify-center w-full gap-1">
-                    <FaStar className="text-yellow-500" />
-                    <FaStar className="text-yellow-500" />
-                    <FaStar className="text-yellow-500" />
-                    <FaStar className="text-yellow-500" />
-                  </div>
-                  <h1 className="text-xl font-bold">{data.title}</h1>
-                  <p className="text-sm text-gray-500 duration-300 group-hover:text-white line-clamp-2">
-                    {data.discription}
-                  </p>
+              />
+            </div>
 
-                  <button
-                    className="px-4 py-1 mt-4 text-white duration-300 rounded-full group-hover:bg-white bg-primary hover:scale-105 group-hover:text-primary"
-                    // onClick={handleOrderPopup}
-                  >
-                    Order Now
-                  </button>
-                </div>
+            {/* Detail Section */}
+            <div className="text-center">
+              {/* Star Rating */}
+              <div className="flex items-center justify-center w-full gap-1">
+                {[...Array(Math.floor(data.rating))].map((_, index) => (
+                  <FaStar key={index} className="text-yellow-500" />
+                ))}
+                {data.rating % 1 !== 0 && (
+                  <FaStar className="text-yellow-300" />
+                )}
               </div>
-            ))}
+
+              <h1 className="mt-2 text-xl font-bold">{data.title}</h1>
+              <p className="text-sm text-gray-500 duration-300 group-hover:text-white line-clamp-2">
+                {data.description}
+              </p>
+
+              <button className="px-4 py-1 mt-4 text-white duration-300 rounded-full group-hover:bg-white bg-primary hover:scale-105 group-hover:text-primary">
+                Order Now
+              </button>
+            </div>
           </div>
-        </div>
+        ))}
       </div>
     </div>
   );
