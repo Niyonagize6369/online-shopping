@@ -55,8 +55,10 @@ function Products() {
             Product
           </h1>
           <p data-aos="fade-up" className="text-xl text-gray-900">
-            lorem ipsum dplor sit amet consectetur adipicicing elit sit
-            asperiores
+            Our clothing collection blends style, comfort, and quality, perfect
+            for any occasion. Made from premium fabrics, each piece offers a
+            great fit and durability. Elevate your wardrobe with trendy and
+            timeless designs.
           </p>
         </div>
         {/* body section  */}

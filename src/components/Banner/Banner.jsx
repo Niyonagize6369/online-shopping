@@ -28,12 +28,13 @@ function Banner() {
             data-aos="fade-up"
             className="flex flex-col justify-center gap-6 sm:pt-0"
           >
-            <h1 className="text-3xl font-bold sm:text-4xl">
+            <h1 className="text-xl font-bold sm:text-4xl">
               Winter sales upto 50% off
             </h1>
-            <p className="text-sm leading-5 tracking-wide text-gray-500">
-              lorem ipsum dplor sit amet consectetur adipicicing elit sit
-              asperiores
+            <p className="text-2xl tracking-wide text-gray-500 leading">
+              Winter Sale stylish fashion! Shop jackets, sweaters, and more at
+              unbeatable prices. Limited-time offer—grab your winter essentials
+              now!
             </p>
             <div className="flex-col gap-4">
               <div data-aos="fade-up" className="flex items-center gap-4">

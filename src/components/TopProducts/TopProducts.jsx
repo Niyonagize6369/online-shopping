@@ -46,7 +46,7 @@ function TopProducts({ handleOrderPopup }) {
           Best Products
         </h1>
         <p data-aos="fade-up" className="text-xl text-gray-900">
-          Browse our selection of high-quality products, handpicked for their
+          our selection of high-quality products, handpicked for their
           excellence. Get yours today and experience the best in the market.
         </p>
       </div>
