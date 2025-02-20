@@ -40,14 +40,6 @@ const ProductsData = [
     author: "yellow",
     aosdelay: "600",
   },
-  // {
-  //   id: 5,
-  //   img: Img5,
-  //   title: "Fashion T-shirt",
-  //   rating: 4.5,
-  //   author: "Pink",
-  //   aosdelay: "800",
-  // },
 ];
 function Products() {
   return (
