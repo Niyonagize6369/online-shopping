@@ -85,7 +85,7 @@ function Navbar({ handleOrderPopup }) {
       </div>
 
       {/* lower nav */}
-      <div className="flex justify-center dark:bg-gray-900">
+      <div data-aos="zoom-in" className="flex justify-center dark:bg-gray-900">
         <ul className="items-center hidden gap-4 sm:flex">
           {Menu.map((data) => (
             <li key={data.id}>
