@@ -28,7 +28,7 @@ const Imagelist = [
   },
 ];
 
-function Hero() {
+function Hero({ handleOrderPopup }) {
   var setting = {
     dots: false,
     arrows: false,
@@ -83,7 +83,13 @@ function Hero() {
                     data-aos-duration="500"
                     data-aos-delay="300"
                   >
-                    <button className="px-4 py-2 rounded-full dark:text-white darduration-200 bg-gradient-to-r from-primary to-secondary hover:scale-105">
+                    <button
+                      onClick={handleOrderPopup}
+                      className="px-4 py-2 rounded-full
+                       dark:text-white darduration-200
+                       bg-gradient-to-r from-primary
+                       to-secondary hover:scale-105"
+                    >
                       Order Now
                     </button>
                   </div>

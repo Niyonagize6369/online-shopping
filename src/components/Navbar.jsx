@@ -18,7 +18,7 @@ const dropdownLinks = [
   { id: 3, name: "Top Rated", link: "/#" },
 ];
 
-function Navbar() {
+function Navbar({ handleOrderPopup }) {
   const [isSearchVisible, setIsSearchVisible] = useState(false);
 
   return (
@@ -63,8 +63,12 @@ function Navbar() {
 
             {/* Order button */}
             <button
-              onClick={() => alert("Ordering not available yet")}
-              className="flex gap-3 px-4 py-1 text-white transition-all duration-200 rounded-full bg-gradient-to-r from-primary to-secondary item-center group"
+              onClick={() => handleOrderPopup()}
+              className="flex gap-3 px-4 py-1 text-white 
+              transition-all duration-200
+               rounded-full bg-gradient-to-r
+                from-primary to-secondary
+                 item-center group"
             >
               <span className="hidden transition-all duration-200 group-hover:block">
                 Order

@@ -34,7 +34,7 @@ const ProductsData = [
   },
 ];
 
-function TopProducts() {
+function TopProducts({ handleOrderPopup }) {
   return (
     <div className="container">
       {/* Header Section */}
@@ -89,7 +89,10 @@ function TopProducts() {
                 {data.description}
               </p>
 
-              <button className="px-4 py-1 mt-4 text-white duration-300 rounded-full group-hover:bg-white bg-primary hover:scale-105 group-hover:text-primary">
+              <button
+                className="px-4 py-1 mt-4 text-white duration-300 rounded-full group-hover:bg-white bg-primary hover:scale-105 group-hover:text-primary"
+                onClick={handleOrderPopup}
+              >
                 Order Now
               </button>
             </div>
