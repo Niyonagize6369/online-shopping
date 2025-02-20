@@ -37,10 +37,7 @@ const Footer = () => {
                 <img src={FooterLogo} alt="Logo" className="max-w-[50px]" />
                 Shopping
               </h1>
-              <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum in
-                beatae ea recusandae blanditiis veritatis.
-              </p>
+              <p>you can contact us through to our platform</p>
             </div>
 
             {/* Footer Links */}

@@ -6,25 +6,25 @@ import "slick-carousel/slick/slick.css";
 const TestimonialData = [
   {
     id: 1,
-    name: "victor",
+    name: "Alice",
     text: "A great solution to improve productivity. Love using it",
     img: "https://picsum.photos/101",
   },
   {
     id: 2,
-    name: "satya nadella",
+    name: "John",
     text: "A great solution to improve productivity. Love using it",
     img: "https://picsum.photos/102",
   },
   {
     id: 3,
-    name: "virat kohli",
+    name: "Daniella",
     text: "A great solution to improve productivity. Love using it",
     img: "https://picsum.photos/104",
   },
   {
     id: 4,
-    name: "sachin tendulkar",
+    name: "James",
     text: "A great solution to improve productivity. Love using it",
     img: "https://picsum.photos/103",
   },
