@@ -10,7 +10,7 @@ import {
 import { FaMobileAlt } from "react-icons/fa";
 
 const BannerImg = {
-  backgroundImage: `url(${Banner})`, // Fixed template literal
+  backgroundImage: `url(${Banner}`, // Fixed template literal
   backgroundPosition: "bottom",
   backgroundRepeat: "no-repeat", // Fixed typo
   backgroundSize: "cover",
@@ -78,7 +78,7 @@ const Footer = () => {
                   <div className="mt-6">
                     <div className="flex items-center gap-3 mt-3">
                       <FaLocationArrow />
-                      <p>nodia, uttar prodeesh</p>
+                      <p>KIGALI RWANDA GISHUSHU</p>
                     </div>
                     <div className="flex items-center gap-3 mt-3">
                       <FaMobileAlt />

@@ -7,25 +7,25 @@ const TestimonialData = [
   {
     id: 1,
     name: "victor",
-    text: "lorem ipsum dolor sit amet consectetur",
+    text: "A great solution to improve productivity. Love using it",
     img: "https://picsum.photos/101",
   },
   {
     id: 2,
     name: "satya nadella",
-    text: "lorem ipsum dolor sit amet consectetur",
+    text: "A great solution to improve productivity. Love using it",
     img: "https://picsum.photos/102",
   },
   {
     id: 3,
     name: "virat kohli",
-    text: "lorem ipsum dolor sit amet consectetur",
+    text: "A great solution to improve productivity. Love using it",
     img: "https://picsum.photos/104",
   },
   {
     id: 4,
     name: "sachin tendulkar",
-    text: "lorem ipsum dolor sit amet consectetur",
+    text: "A great solution to improve productivity. Love using it",
     img: "https://picsum.photos/103",
   },
 ];
@@ -72,7 +72,9 @@ export const Testimonials = () => {
             Testimonials
           </h1>
           <p data-aos="fade-up" className="text-xl text-gray-900">
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+            This product has made a huge difference in my daily work. It’s
+            simple to use, and I've seen a real boost in my productivity since I
+            started using it.
           </p>
         </div>
 
